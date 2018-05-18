@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>H2</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>views/login/index.jsp</welcome-file>
+    <welcome-file>views/login/index.html</welcome-file>
+    <welcome-file>views/login/index.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>regedit</servlet-name>
+    <jsp-file>/views/login/regedit/regedit.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>regedit</servlet-name>
+    <url-pattern>/regedit</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>404</servlet-name>
+    <jsp-file>/views/404.html</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>404</servlet-name>
+    <url-pattern>/404</url-pattern>
+  </servlet-mapping>
+  
+  
+    <error-page>
+  	<error-code>404</error-code>
+  	<location>/404</location>
+  </error-page>
+  
+</web-app>

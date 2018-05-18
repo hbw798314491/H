@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-13 1:19:22 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.qingmu.hibernate.entities.StudentPojo" table="STUDENT">
+        <id name="oid" type="java.lang.Integer">
+            <column name="OID" />
+            <generator class="increment" />
+        </id>
+        <property name="User" type="long">
+            <column name="USER" />
+        </property>
+        <property name="studentName" type="java.lang.String">
+            <column name="STUDENT_NAME" />
+        </property>
+        <property name="studentPassword" type="java.lang.String">
+            <column name="STUDENT_PASSWORD" />
+        </property>
+        <property name="studentClass" type="java.lang.Integer">
+            <column name="STUDENT_CLASS" />
+        </property>
+        <property name="studentDate" type="java.util.Date">
+            <column name="STUDENT_DATE" />
+        </property>
+        <one-to-one name="report" class="com.qingmu.hibernate.entities.result.ReportPojo"></one-to-one>
+    	<one-to-one name="information" class="com.qingmu.hibernate.entities.data.InformationPojo"></one-to-one>
+    </class>
+</hibernate-mapping>

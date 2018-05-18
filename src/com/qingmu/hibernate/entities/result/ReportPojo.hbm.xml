@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.qingmu.hibernate.entities.result.ReportPojo" table="REPORT">
+        <id name="oid" type="java.lang.Integer">
+            <column name="OID" />
+            <generator class="foreign">
+            	<param name="property">student</param>
+            </generator>
+        </id>
+        <property name="reportChinese" type="java.lang.Double">
+            <column name="REPORT_CHINESE" />
+        </property>
+        <property name="reportMathematics" type="java.lang.Double">
+            <column name="REPORT_MATHEMATICS" />
+        </property>
+        <property name="reportLanguages" type="java.lang.Double">
+            <column name="REPORT_LANGUAGES" />
+        </property>
+        <property name="reportGeneral" type="java.lang.Double">
+            <column name="REPORT_GENERAL" />
+        </property>
+        <one-to-one name="student" class="com.qingmu.hibernate.entities.StudentPojo" constrained="true"></one-to-one>
+    </class>
+</hibernate-mapping>

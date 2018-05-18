@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.qingmu.hibernate.entities.data.InformationPojo" table="INFORMATION">
+        <id name="oid" type="java.lang.Integer">
+            <column name="OID" />
+            <generator class="foreign">
+				<param name="property">student</param>
+			</generator>            
+        </id>
+        <property name="informationSex" type="java.lang.String">
+            <column name="INFORMATION_SEX" />
+        </property>
+        <property name="informationTel" type="java.lang.String">
+            <column name="INFORMATION_TEL" />
+        </property>
+        <property name="informationHobby" type="java.lang.String">
+            <column name="INFORMATION_HOBBY" />
+        </property>
+        <property name="informationEthnic" type="java.lang.String">
+            <column name="INFORMATION_ETHNIC" />
+        </property>
+
+		<one-to-one name="student" class="com.qingmu.hibernate.entities.StudentPojo" constrained="true"></one-to-one>
+
+    </class>
+</hibernate-mapping>
