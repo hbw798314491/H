@@ -15,8 +15,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.qingmu.hibernate.entities.StudentPojo;
 import com.qingmu.hibernate.entities.result.ReportPojo;
+import com.qingmu.hibernate.entities.student.StudentPojo;
 
 public class JUnit{
 

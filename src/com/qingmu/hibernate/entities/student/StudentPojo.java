@@ -1,4 +1,4 @@
-package com.qingmu.hibernate.entities;
+package com.qingmu.hibernate.entities.student;
 
 import java.util.Date;
 

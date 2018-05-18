@@ -5,9 +5,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import com.qingmu.hibernate.entities.StudentPojo;
 import com.qingmu.hibernate.entities.data.InformationPojo;
 import com.qingmu.hibernate.entities.result.ReportPojo;
+import com.qingmu.hibernate.entities.student.StudentPojo;
  
 public class HibernateDao{
 	private static final ThreadLocal<Session> threadLocal=new ThreadLocal<Session>();

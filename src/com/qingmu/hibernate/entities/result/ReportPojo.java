@@ -1,6 +1,6 @@
 package com.qingmu.hibernate.entities.result;
 
-import com.qingmu.hibernate.entities.StudentPojo;
+import com.qingmu.hibernate.entities.student.StudentPojo;
 public class ReportPojo {
 
 	private Integer oid;

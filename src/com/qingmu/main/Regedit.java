@@ -17,7 +17,7 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
-import com.qingmu.hibernate.entities.StudentPojo;
+import com.qingmu.hibernate.entities.student.StudentPojo;
 
 
 @WebServlet("/Regedit")

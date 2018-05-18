@@ -29,7 +29,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 import org.hibernate.service.ServiceRegistry;
 
-import com.qingmu.hibernate.entities.StudentPojo;
+import com.qingmu.hibernate.entities.student.StudentPojo;
 
 @WebServlet("/Controller")
 public class Controller extends HttpServlet {

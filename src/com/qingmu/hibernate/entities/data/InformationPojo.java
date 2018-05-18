@@ -1,6 +1,6 @@
 package com.qingmu.hibernate.entities.data;
 
-import com.qingmu.hibernate.entities.StudentPojo;
+import com.qingmu.hibernate.entities.student.StudentPojo;
 
 public class InformationPojo {
 
