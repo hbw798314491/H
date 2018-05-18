@@ -23,7 +23,7 @@
     <property name="hbm2ddl.auto">update</property>
     
     
- 	    <mapping resource="com/qingmu/hibernate/entities/StudentPojo.hbm.xml"  />
+ 	    <mapping resource="com/qingmu/hibernate/entities/student/StudentPojo.hbm.xml"  />
         <mapping resource="com/qingmu/hibernate/entities/result/ReportPojo.hbm.xml" />
    	  	<mapping resource="com/qingmu/hibernate/entities/data/InformationPojo.hbm.xml"/>
     

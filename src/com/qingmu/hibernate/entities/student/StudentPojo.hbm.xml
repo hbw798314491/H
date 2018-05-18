@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2018-5-13 1:19:22 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="com.qingmu.hibernate.entities.StudentPojo" table="STUDENT">
+    <class name="com.qingmu.hibernate.entities.studnet.StudentPojo" table="STUDENT">
         <id name="oid" type="java.lang.Integer">
             <column name="OID" />
             <generator class="increment" />
